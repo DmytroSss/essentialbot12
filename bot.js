@@ -1448,6 +1448,6 @@ bot.on('voiceStateUpdate', async (oldState, newState) => {
 	}
 });
 process.on('unhandledRejection', (reason) => { console.log(reason) })
-bot.login(token);
+bot.login(process.env.TOKEN);
 const disbut = require('discord-buttons')
 disbut(bot)
