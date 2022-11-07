@@ -640,7 +640,7 @@ bot.on("messageReactionAdd", async (reaction, user) => {
 					const welcomeMessageEnding = [`Если у тебя есть какой-то вопрос, то обязательно задай его мне!`, `Если у тебя будут какие-то вопросы по поводу данного сервера, то задавай их мне!`, `Если тебе нужна помощь по серверу, то обязательно обращайся ко мне.`, `Если тебе захочется что-то спросить о сервере, то спроси у меня и я отвечу!`, `Если тебе требуется помощь по функционалу сервера, то спроси у меня!`, `Если тебе интересно, чем ты можешь тут заняться - обращайся ко мне.`, `Если ты хочешь узнать что-то о сервере - спроси меня!`, `Если тебе потребуется подсказка по функциям сервера - узнай у меня!`];
 					const welcomeMessageExamples = [`<@${config.botId}> как мне создать свой клан?`, `<@${config.botId}> чем тут заняться?`, `<@${config.botId}> расскажи о себе.`, `<@${config.botId}> куда отправлять свои фотографии?`, `<@${config.botId}> как создать приватку?`, `<@${config.botId}> как создать любовную комнату?`];
 					let welcomeMessage = welcomeMessageWelc[Math.floor(Math.random() * welcomeMessageWelc.length)] + ' ' + welcomeMessageName[Math.floor(Math.random() * welcomeMessageName.length)] + ' '  + welcomeMessageLittleAbout[Math.floor(Math.random() * welcomeMessageLittleAbout.length)] + ' ' + welcomeMessageEnding[Math.floor(Math.random() * welcomeMessageEnding.length)] + '\n' + 'Пример: ' + welcomeMessageExamples[Math.floor(Math.random() * welcomeMessageExamples.length)];
-					member.guild.channels.cache.get(config.mainChannel).send(welcomeMessage);
+					//member.guild.channels.cache.get(config.mainChannel).send(welcomeMessage);
 				});
 			}
 		}
