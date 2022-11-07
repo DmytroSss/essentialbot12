@@ -633,7 +633,7 @@ bot.on("messageReactionAdd", async (reaction, user) => {
 						.setThumbnail(`${member.user.displayAvatarURL({dynamic: true})}`)
 						.setTimestamp();
 
-					member.guild.channels.cache.get(config.mainChannel).send(member, embed);
+					member.guild.channels.cache.get(config.mainChannel).send(embed);
 					const welcomeMessageWelc = [`Привет, ${member}, добро пожаловать на сервер essential..`, `Здравствуй, ${member}, и добро пожаловать на сервер essential..`, `Добро пожаловать на сервере essential., ${member}.`, `${member}, добро пожаловать на сервер essential..`, `Привет, дорогой ${member}. Ты новенький на сервере essential.?`, `Приветствую на сервере essential., ${member}!`, `${member}, добро пожаловать в дивный новый мир, друг!`, `${member}, приветствую в новом дивном мире!`]
 					const welcomeMessageName = [`Меня зовут Katsuhira.`, `Я - Katsuhira.`, `Можешь называть меня Katsuhira.`, `Можешь звать меня Katsuhira.`, `Твоё имя мы уже знаем, а меня ты можешь называть Katsuhira.`, `Как дела? Меня зовут Katsuhira.`, `Меня называют Katsuhira.`];
 					const welcomeMessageLittleAbout = [`Я буду твоим личным гидом по данному серверу.`, `Я помогу тебе разобраться с функциями сервера!`, `Я помогу узнать тебе всю нужную информацию о данном сервере.`, `Я буду твоим помощником на сервере.`, `Я буду помогу тебе разобраться с этим сервером.`, `Я отвечу на любой твой вопрос, связанный с данным сервером.`, `Теперь я твой личный гид по серверу и помогу тебе узнать обо всём, что тут есть.`, `Я твой личный помощник на этом сервере и помогу тебе разобраться с его функциями.`];
