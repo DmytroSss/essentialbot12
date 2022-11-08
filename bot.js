@@ -244,7 +244,7 @@ bot.on('ready', async () => {
 			});
 			if (usersInVoiceChannels.length > 0) {
 				let randomUserId = usersInVoiceChannels[Math.floor(Math.random() * usersInVoiceChannels.length)];
-				let randCoins = Math.floor(Math.random() * 70) + 30;
+				let randCoins = Math.floor(Math.random() * 170) + 30;
 
 				let giftEmbed = new Discord.MessageEmbed()
 					.setTitle(`♡𓂃˚ Подарок◞`)
@@ -295,7 +295,7 @@ bot.on('ready', async () => {
 						return;
 					});
 			}
-		}, 1000 * 60 * 30);
+		}, 1000 * 60 * 30 * (Math.floor(Math.random() * 3) + 1));
 		//цикл, который срабатывает раз в минуту
 		setInterval(async function() {
 			try {
