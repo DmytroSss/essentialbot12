@@ -1,16 +1,15 @@
 const Discord = require('discord.js');
 const fs = require('fs');
-const shiomi = require('../package.json');
+const derabbit = require('../package.json');
 const config = require('../botconfig.json');
 //mongoose
 const mongoose = require('mongoose');
 const profileModel = require('../schemas/profileSchema.js');
 const actionModel = require('../schemas/actionSchema.js');
 
-// Бесполезная дичь
-// function sleep(ms) {
-//     return new Promise((res) => setTimeout(res, ms));
-// }
+function sleep(ms) {
+    return new Promise((res) => setTimeout(res, ms));
+}
 
 module.exports.run = async (bot, message, args) => {
     try {
@@ -140,7 +139,7 @@ module.exports.run = async (bot, message, args) => {
                     .setFooter(`${rUser.username}`, `${rUser.displayAvatarURL({dynamic: true})}`)
                     .setTimestamp();
 
-                    for (let i = 0; i < 4; i++) {
+                    for (let i = 0; i < 6; i++) {
                         let rand1 = Math.floor(Math.random() * 6) + 1;
                         let rand2 = Math.floor(Math.random() * 6) + 1;
 
